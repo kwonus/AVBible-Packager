@@ -7,12 +7,11 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="51374Digital-AV.org.AV-Bible"
-    Publisher="CN=38696806-5992-4D3E-8515-F76B2A3AB575"
-    Version="1.9.1.0" />
+    Name="51374Digital-AV.org.AVBible"
+    Version="1.9.5.0" />
 
   <Properties>
-    <DisplayName>AV-Bible</DisplayName>
+    <DisplayName>AVBible</DisplayName>
     <PublisherDisplayName>DigitalAV</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
@@ -31,7 +30,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="AV-Bible"
+        DisplayName="AVBible"
         Description="AVBible installation"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
