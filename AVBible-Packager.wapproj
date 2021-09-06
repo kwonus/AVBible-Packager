@@ -55,13 +55,14 @@
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-    <PackageCertificateThumbprint>869047AA4138E822E0C395F0B2CCF8FDE86A5B5F</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>0C66DC896A7442AD3E139A90967EFF337B469249</PackageCertificateThumbprint>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <EntryPointProjectUniqueName>..\AVBible\AVBible.csproj</EntryPointProjectUniqueName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <AppxBundle>Always</AppxBundle>
@@ -99,6 +100,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <None Include="KCW-CodeSigning.pfx" />
     <None Include="Package.StoreAssociation.xml" />
     <None Include="AVBible-Packager_TemporaryKey.pfx" />
     <Content Include="Images\SplashScreen.scale-200.png" />
@@ -112,5 +114,8 @@
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
   <ItemGroup>
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.19041.8" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AVBible\AVBible.csproj" />
   </ItemGroup>
 </Project>

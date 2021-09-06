@@ -8,7 +8,7 @@
 
   <Identity
     Name="51374Digital-AV.org.AVBible"
-    Version="1.9.5.0" />
+    Version="1.9.7.0"  Publisher="CN=Kevin Wonus, O=Kevin Wonus, S=Virginia, C=US"/>
 
   <Properties>
     <DisplayName>AVBible</DisplayName>
